@@ -6,7 +6,7 @@ import tensorflow as tf
 st.set_page_config(page_title="DermaLens", layout="wide", page_icon="🩺")
 
 def load_model():
-    model = tf.keras.models.load_model("skin_disease_model2.keras")
+    model = tf.keras.models.load_model("skin_disease_model.keras")
     return model
 
 model = load_model()
