@@ -2,6 +2,7 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 import tensorflow as tf
+import os
 
 st.set_page_config(page_title="DermaLens", layout="wide", page_icon="🩺")
 
