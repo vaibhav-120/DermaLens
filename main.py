@@ -2,12 +2,14 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 import tensorflow as tf
-import os
 
+# Page Configuration
 st.set_page_config(page_title="DermaLens", layout="wide", page_icon="🩺")
 
+# Load Model Function
+@st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model("skin_disease_model.keras")
+    model = tf.keras.models.load_model("skin_disease_model2.keras")
     return model
 
 model = load_model()
